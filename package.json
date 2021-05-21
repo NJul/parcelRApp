@@ -1,0 +1,11 @@
+{
+  "name": "parcelrapp",
+  "version": "1.0.0",
+  "description": "parcel, npm view parcel versions",
+  "scripts": {
+    "start": "parcel serve ./main.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2"
+  }
+}

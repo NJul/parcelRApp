@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "parcel, npm view parcel versions; npm install react react-dom",
   "scripts": {
-    "start": "parcel serve ./index.html"
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html"
   },
   "devDependencies": {
     "parcel": "^2.0.0-beta.2"

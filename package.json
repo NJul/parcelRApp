@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "parcel, npm view parcel versions; npm install react react-dom",
   "scripts": {
-    "start": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "clean": "rm -rf ./dist && rm -rf ./.parcel-cache",
+    "start": "npm run clean && parcel serve ./src/*.html --no-source-maps --open",
+    "build": "npm run clean && parcel build ./src/*.html --public-url ./ --no-source-maps",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "parcel": "^2.0.0-beta.2"
